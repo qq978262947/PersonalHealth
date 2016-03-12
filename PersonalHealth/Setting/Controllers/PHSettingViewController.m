@@ -56,7 +56,7 @@
 #pragma mark - UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 6;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -81,9 +81,6 @@
             break;
         case 4:
             cell.textLabel.text = @"清除缓存";
-            break;
-        case 5:
-            cell.textLabel.text = @"意见反馈";
             break;
         default:
             break;

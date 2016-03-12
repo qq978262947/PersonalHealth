@@ -24,7 +24,7 @@ static NSString *const cellID = @"cellID";
 @implementation PHArticleViewController
 
 
-#pragma mark Life Cycle
+#pragma mark - Life Cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,7 +46,7 @@ static NSString *const cellID = @"cellID";
 //    return cell;
 //}
 
-#pragma mark Private Method
+#pragma mark - Private Method
 
 - (void)configSubviewConstraints {
     UIEdgeInsets edgeInsets = UIEdgeInsetsMake(StatusBarH, 0, 0, 0);
@@ -106,7 +106,7 @@ static NSString *const cellID = @"cellID";
     }];
 }
 
-#pragma setting & getting
+#pragma mark - setting & getting
 
 - (UIView *)subView {
     if (!_subView) {
@@ -116,7 +116,6 @@ static NSString *const cellID = @"cellID";
         _subView=tableView;
         
         _subView.backgroundColor=[UIColor whiteColor];
-//        [_subView registerNib:[UINib nibWithNibName:NSStringFromClass([PHArticleCell class]) bundle:nil] forCellReuseIdentifier:cellID];
     }
     return _subView;
 }
